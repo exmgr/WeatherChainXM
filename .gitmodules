@@ -1,0 +1,6 @@
+[submodule "ipfs-client-esp32"]
+	path = ipfs-client-esp32
+	url = https://github.com/exmgr/ipfs-client-esp32.git
+[submodule "EXM-IoT-Node"]
+	path = EXM-IoT-Node
+	url = https://github.com/exmgr/EXM-IoT-Node.git
