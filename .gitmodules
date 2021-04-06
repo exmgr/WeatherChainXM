@@ -4,3 +4,6 @@
 [submodule "EXM-IoT-Node"]
 	path = EXM-IoT-Node
 	url = https://github.com/exmgr/EXM-IoT-Node.git
+[submodule "ipfs-middleware"]
+	path = ipfs-middleware
+	url = git@github.com:exmgr/agroxm-ipfs-middleware.git
