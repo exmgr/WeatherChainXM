@@ -2,6 +2,7 @@
 
 CHAINLINK + IPFS open hardware weather station. Energy and communication autonomous IoT sensor node, with weather sensors, that stores sensor data directly to IPFS and automates execution of parametric weather insurance contracts on-chain via the distributed CHAINLINK oracle system.
 
+![IPFS IoT Sensor Node](./atmos41+exm-IoT-node.jpg "IPFS IoT Sensor Node")
 
 # 1. Inspiration - background
 
