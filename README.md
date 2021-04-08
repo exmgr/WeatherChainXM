@@ -25,9 +25,10 @@ Enables insurance companies to provide small-farmers, parametric weather insuran
 
 Enables farmers to benefit from insurance with lower premiums, zero delays in execution of claims, and a cost-efficient IoT precision agriculture/ weather advisory service for their daily operations.
 
-# 3. High-level Technical Description
+# 3. High-level Architecture
+![Solution Architecture](./architecture.jpg "Solution Architecture")
 
-## 3.1 Open hardware weather station features
+## 3.1 Open hardware weather station
 
 Energy and communication autonomous IoT sensor node that stores sensor data directly to IPFS and automates execution of parametric weather insurance contracts on-chain via the distributed chainlink oracle system.
 
@@ -37,14 +38,15 @@ Energy and communication autonomous IoT sensor node that stores sensor data dire
 - 3D printable, weatherproof enclosure with modular mounting options
 - Stores (adds) sensor data (e.g weather conditions) directly to IPFS
 
-## 3.2 IPFS/CHAINLINK Middleware features
+### 3.1.1 Microcontroler ESP32 arduino IPFS HTTP client 
+Autonomous, low power sensor nodes, are typicaly based on microcontrollers and not full blown (Linux) OS computers. In order to interact directly with IPFS from a microcontroller we had to create an IPFS HTTP client in C for the Espressif ESP32 mcu that our node is based. While we were there, we also made a standalone arduino IPFS HTTP client arduino library and published it in platformio.
+https://platformio.org/lib/show/11976/IPFSClientESP32
+
+### 3.2 IPFS & CHAINLINK Middleware
 
 - Reorganizes IPFS stored sensor data (e.g weather conditions) in to MFS & IPNS to provide discoverability using geohashes and timestamps on directory structure.
 - Acts as Chainlink external adapter, bridging with smart contracts.
 
-## 3.3 Solution Architecture
-
-![Solution Architecture](./architecture.jpg "Solution Architecture")
 
 # 4. How to Build and Deploy the Project
 ## 4.1 Hardware Sensor Node
@@ -80,7 +82,7 @@ Use of geohashes was chosen to assist with data discoverability identifying the 
 
 Device management takes place over shared attributes controlled by a custom widget. Enables remote device filesystem format, reboot, rtc sync, sensor on/off, and firmware OTA.
 
-## 4.5 EXM IPFS middleware - file organizer
+## 4.5 EXM IPFS middleware - MFS / IPFN file organizer
 
 IPFS is essentially a distributed file system. As a protocol, it allows many file operations (like copy, remove, etc) that typically exist in traditional file systems. These operations are exposed as commands via a CLI or via a HTTP RPC API. Both of these act on a specific IPFS node.
 
