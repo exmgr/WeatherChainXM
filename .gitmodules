@@ -7,3 +7,6 @@
 [submodule "ipfs-middleware"]
 	path = ipfs-middleware
 	url = git@github.com:exmgr/agroxm-ipfs-middleware.git
+[submodule "smart-contract"]
+	path = smart-contract
+	url = https://github.com/exmgr/smart-contract
