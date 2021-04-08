@@ -12,9 +12,7 @@ We know hyperlocal weather advisory services have a major impact on agriculture,
  
 Crop insurance is another critical tool for the problems faced by small farmers, but again a number of barriers make adoption difficult especially for small farms. Typically, weather risk crop insurance for small farms is expensive due to manual legal work and complexities in claims. DLT Smart contracts could change that - but weather data scarcity and trust regarding the truth of crop conditions, remains a problem, slowing the adoption.
 
-We believe insurance companies should combine their services with precision agriculture solutions to increase their market and bring the most value to farmers. 
-
-We are working on a compound IoT, DLT solution that can serve both.
+We believe insurance companies should combine their services with precision agriculture solutions to increase their market and bring the most value to farmers. We are working on a compound IoT, DLT solution that can serve them both.
 
 # 2. What it does
 
