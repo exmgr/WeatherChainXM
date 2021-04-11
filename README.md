@@ -47,6 +47,10 @@ https://platformio.org/lib/show/11976/IPFSClientESP32
 - Reorganizes IPFS stored sensor data (e.g weather conditions) in to MFS & IPNS to provide discoverability using geohashes and timestamps on directory structure.
 - Acts as Chainlink external adapter, bridging with smart contracts.
 
+### 3.3 IoT PaaS - Thingsboard
+End user visualisation backend, provides dashboards, device managment etc. 
+https://thingsboard.io/
+
 
 # 4. How to Build and Deploy the Project
 ## 4.1 Hardware Sensor Node
